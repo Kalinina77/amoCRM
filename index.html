@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сделки</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .loading {
+            text-align: center;
+        }
+        .status-circle {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .status-red {
+            background-color: red;
+        }
+        .status-green {
+            background-color: green;
+        }
+        .status-yellow {
+            background-color: yellow;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Сделки</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th class="info-2">Название</th>
+                <th class="info-2">Бюджет</th>
+                <th class="info hidden">Дата</th>
+                <th class="info hidden">Статус</th>
+            </tr>
+        </thead>
+        <tbody id="deals-table">
+
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
